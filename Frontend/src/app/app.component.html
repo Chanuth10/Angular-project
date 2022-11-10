@@ -1,0 +1,7 @@
+<app-navbar *ngIf="loggedIn"></app-navbar>
+<app-topbar *ngIf="loggedIn"></app-topbar>
+<div class="{{loggedIn ? 'main' : ''}}">
+  <router-outlet></router-outlet>
+</div>
+
+
